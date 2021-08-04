@@ -1,0 +1,80 @@
+[[keys]]
+  index = 0
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      label = "Low"
+      icon = "/home/guido/.deck/assets/Lights - Brightness Down.png" 
+  [keys.action]
+	exec = "/usr/bin/sudo /usr/bin/ddccontrol -r 0x10 -w 1 dev:/dev/i2c-6"   
+
+[[keys]]
+  index = 1
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      label = "Medium"
+      icon = "/home/guido/.deck/assets/Lights - On.png" 
+  [keys.action]
+	exec = "/usr/bin/sudo /usr/bin/ddccontrol -r 0x10 -w 30 dev:/dev/i2c-6"
+[[keys]]
+  index = 2 
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      label = "High"
+      icon = "/home/guido/.deck/assets/Lights - Brightness Up.png" 
+  [keys.action]
+	exec = "/usr/bin/sudo /usr/bin/ddccontrol -r 0x10 -w 60 dev:/dev/i2c-6"    
+
+[[keys]]
+  index = 3
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      label = "Extreme"
+      icon = "/home/guido/.deck/assets/Lights - Warmer.png" 
+  [keys.action]
+	exec = "/usr/bin/sudo /usr/bin/ddccontrol -r 0x10 -w 90 dev:/dev/i2c-6"    
+
+
+[[keys]]
+  index = 5
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      label = "HDMI"
+      icon = "/home/guido/.deck/assets/Multimedia - Source On.png" 
+  [keys.action]
+	exec = "/usr/bin/sudo /usr/bin/ddccontrol -r 0x60 -w 17 dev:/dev/i2c-6"    
+
+[[keys]]
+  index = 6
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      label = "DP"
+      icon = "/home/guido/.deck/assets/Multimedia - Source On.png" 
+  [keys.action]
+	exec = "/usr/bin/sudo /usr/bin/ddccontrol -r 0x60 -w 15 dev:/dev/i2c-6"    
+
+[[keys]]
+  index = 7
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      label = "MiniDP"
+      icon = "/home/guido/.deck/assets/Multimedia - Source On.png" 
+  [keys.action]
+	exec = "/usr/bin/sudo /usr/bin/ddccontrol -r 0x60 -w 16 dev:/dev/i2c-6"    
+
+[[keys]]
+  index = 14
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      icon = "/home/guido/.deck/assets/back.png"
+      label = "Terug"
+  [keys.action]
+    deck = "/home/guido/.deck/main.deck"
+

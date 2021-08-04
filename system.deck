@@ -1,0 +1,47 @@
+[[keys]]
+  index = 0
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      label = "Suspend"
+      icon = "/home/guido/.deck/assets/suspend.png" 
+  [keys.action]
+        exec = "bash /home/guido/suspend.sh"   
+
+[[keys]]
+  index = 1
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      label = "Log off"
+      icon = "/home/guido/.deck/assets/logout-icon-34.png" 
+  [keys.action]
+        exec = "qdbus org.kde.ksmserver /KSMServer logout 0 3 3"   
+[[keys]]
+  index = 2
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      label = "Reboot"
+      icon = "/home/guido/.deck/assets/reboot.png" 
+  [keys.action]
+        exec = "sudo reboot"   
+[[keys]]
+  index = 3
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      label = "Shutdown"
+      icon = "/home/guido/.deck/assets/power.png" 
+  [keys.action]
+        exec = "sudo shutdown now"   
+
+[[keys]]
+index = 14
+[keys.widget]
+id = "button"
+[keys.widget.config]
+icon = "/home/guido/.deck/assets/back.png"
+label = "Terug"
+[keys.action]
+deck = "/home/guido/.deck/main.deck"

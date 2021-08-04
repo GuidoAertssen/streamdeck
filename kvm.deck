@@ -1,0 +1,110 @@
+[[keys]]
+  index = 0
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      label = "Wake"
+      icon = "/home/guido/.deck/assets/Windows10.png" 
+  [keys.action]
+	exec = "sudo virsh dompmwakeup --domain W10Gaming"   
+
+[[keys]]
+  index = 1
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      label = "Shutdown"
+      icon = "/home/guido/.deck/assets/Windows10.png" 
+  [keys.action]
+	exec = "sudo virsh shutdown --domain W10Gaming"   
+
+[[keys]]
+  index = 2
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      label = "Suspend"
+      icon = "/home/guido/.deck/assets/Windows10.png" 
+  [keys.action]
+	exec = "sudo virsh dompmsuspend --domain W10Gaming --target mem"   
+[[keys]]
+  index = 3
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      label = "Start"
+      icon = "/home/guido/.deck/assets/Windows10.png" 
+  [keys.action]
+	exec = "sudo virsh start --domain W10Gaming"   
+
+[[keys]]
+  index = 4
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      label = "Switch to"
+      icon = "/home/guido/.deck/assets/Multimedia - Source On.png" 
+  [keys.action]
+        exec = "/usr/bin/sudo /usr/bin/ddccontrol -r 0x60 -w 15 dev:/dev/i2c-6"    
+
+[[keys]]
+  index = 5
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      label = "Wake"
+      icon = "/home/guido/.deck/assets/Windows10.png" 
+  [keys.action]
+	exec = "sudo virsh dompmwakeup --domain W10Work"   
+
+[[keys]]
+  index = 6
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      label = "Shutdown"
+      icon = "/home/guido/.deck/assets/Windows10.png" 
+  [keys.action]
+	exec = "sudo virsh shutdown --domain W10Work"   
+
+[[keys]]
+  index = 7
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      label = "Suspend"
+      icon = "/home/guido/.deck/assets/Windows10.png" 
+  [keys.action]
+	exec = "sudo virsh dompmsuspend --domain W10Work --target mem"   
+
+[[keys]]
+  index = 8
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      label = "Start"
+      icon = "/home/guido/.deck/assets/Windows10.png" 
+  [keys.action]
+	exec = "sudo virsh start --domain W10Work"   
+
+[[keys]]
+  index = 10
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      label = "RedDeadR2"
+      icon = "/home/guido/.deck/assets/rdr.jpeg" 
+  [keys.action]
+        exec = "sh /home/guido/.deck/scripts/rdr2.sh"    
+
+
+[[keys]]
+  index = 14
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      icon = "/home/guido/.deck/assets/back.png"
+      label = "Terug"
+  [keys.action]
+    deck = "/home/guido/.deck/main.deck"
+

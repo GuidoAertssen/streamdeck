@@ -1,0 +1,138 @@
+[[keys]]
+  index = 0
+  [keys.widget]
+    id = "top"
+    [keys.widget.config]
+      mode = "cpu"
+      fillColor = "#d497de"
+
+[[keys]]
+  index = 1
+  [keys.widget]
+    id = "top"
+    [keys.widget.config]
+      mode = "memory"
+      fillColor = "#a69bd6"
+[[keys]]
+  index = 2
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      label = "Display"
+      icon = "/home/guido/.deck/assets/display.png" 
+  [keys.action]
+	deck = "/home/guido/.deck/display.deck"   
+[[keys]]
+  index = 3
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      label = "KVM"
+      icon = "/home/guido/.deck/assets/Windows10.png" 
+  [keys.action]
+	deck = "/home/guido/.deck/kvm.deck"   
+
+[[keys]]
+  index = 4
+  [keys.widget]
+    id = "clock"
+
+[[keys]]
+  index = 5
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      icon = "/home/guido/.deck/assets/keepass.png"
+      label = "Keepass"
+  [keys.action]
+	exec = "keepass2" 
+
+[[keys]]
+  index = 6
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      icon = "/home/guido/.deck/assets/Windows10.png"
+      label = "RDP"
+  [keys.action]
+	exec = "/usr/bin/remmina" 
+
+[[keys]]
+  index = 7
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      icon = "/home/guido/.deck/assets/rdp.png"
+      label = "Remmina"
+  [keys.action]
+	exec = "cp /home/guido/.remmina/default.remmina.org /home/guido/.remmina/default.remmina && remmina --edit=/home/guido/.remmina/default.remmina" 
+
+[[keys]]
+  index = 8
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      icon = "/home/guido/.deck/assets/brave.png"
+      label = "Brave"
+  [keys.action]
+    exec = "brave-browser --incognito"
+
+[[keys]]
+  index = 9
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      icon = "/home/guido/.deck/assets/pia.png"
+      label = "PIA"
+  [keys.action]
+    exec = "/opt/piavpn/bin/pia-client %u"
+
+[[keys]]
+  index = 10
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      icon = "/home/guido/.deck/assets/Multimedia - Volume Down.png"
+      label = "Volume--"
+  [keys.action]
+    exec = "amixer -D pulse set Master 5%-"
+
+[[keys]]
+  index = 11
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      icon = "/home/guido/.deck/assets/Multimedia - Volume Up.png"
+      label = "Volume++"
+  [keys.action]
+    exec = "amixer -D pulse set Master 5%+"
+
+[[keys]]
+  index = 12
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      icon = "/home/guido/.deck/assets/App - Generic.png"
+      label = "Code"
+  [keys.action]
+    exec = "/usr/bin/code"
+
+[[keys]]
+  index = 13
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      label = "Kill VLC"
+      icon = "/home/guido/.deck/assets/novlc.png" 
+  [keys.action]
+        exec = "pkill -9 vlc"   
+
+[[keys]]
+  index = 14
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      label = "System"
+      icon = "/home/guido/.deck/assets/power.png" 
+  [keys.action]
+	deck = "/home/guido/.deck/system.deck"   
