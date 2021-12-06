@@ -55,7 +55,7 @@
       label = "Wake"
       icon = "/home/guido/.deck/assets/Windows10.png" 
   [keys.action]
-	exec = "sudo virsh dompmwakeup --domain W10Work"   
+	exec = "sudo virsh dompmwakeup --domain W10WorkPC"   
 
 [[keys]]
   index = 6
@@ -65,7 +65,7 @@
       label = "Shutdown"
       icon = "/home/guido/.deck/assets/Windows10.png" 
   [keys.action]
-	exec = "sudo virsh shutdown --domain W10Work"   
+	exec = "sudo virsh shutdown --domain W10WorkPC"   
 
 [[keys]]
   index = 7
@@ -75,7 +75,7 @@
       label = "Suspend"
       icon = "/home/guido/.deck/assets/Windows10.png" 
   [keys.action]
-	exec = "sudo virsh dompmsuspend --domain W10Work --target mem"   
+	exec = "sudo virsh dompmsuspend --domain W10WorkPC --target mem"   
 
 [[keys]]
   index = 8
@@ -85,7 +85,7 @@
       label = "Start"
       icon = "/home/guido/.deck/assets/Windows10.png" 
   [keys.action]
-	exec = "sudo virsh start --domain W10Work"   
+	exec = "sudo virsh start --domain W10WorkPC"   
 
 [[keys]]
   index = 10

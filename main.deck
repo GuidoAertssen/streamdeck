@@ -63,9 +63,9 @@
     id = "button"
     [keys.widget.config]
       icon = "/home/guido/.deck/assets/rdp.png"
-      label = "Remmina"
+      label = "W10Work"
   [keys.action]
-	exec = "cp /home/guido/.remmina/default.remmina.org /home/guido/.remmina/default.remmina && remmina --edit=/home/guido/.remmina/default.remmina" 
+	exec = "remmina -c /home/guido/.remmina/servers_rdp_w10work_192-168-100-100.remmina" 
 
 [[keys]]
   index = 8
