@@ -37,6 +37,15 @@
   [keys.action]
 	exec = "/usr/bin/sudo /usr/bin/ddccontrol -r 0x10 -w 90 dev:/dev/i2c-6"    
 
+[[keys]]
+  index = 4
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      label = "Reset"
+      icon = "/home/guido/.deck/assets/reset.png" 
+  [keys.action]
+	exec = "/bin/bash /home/guido/resetdisplay.sh"    
 
 [[keys]]
   index = 5
